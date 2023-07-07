@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="main" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.Controller.WinScreenController">
+   <children>
+      <GridPane layoutX="10.0" layoutY="10.0" prefHeight="300.0" prefWidth="600.0" styleClass="SubPane" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="30.0">
+         <columnConstraints>
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" percentWidth="20.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" percentWidth="20.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" percentWidth="20.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" percentWidth="20.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" percentWidth="20.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints percentHeight="25.0" vgrow="SOMETIMES" />
+            <RowConstraints percentHeight="25.0" vgrow="SOMETIMES" />
+            <RowConstraints percentHeight="25.0" vgrow="SOMETIMES" />
+            <RowConstraints percentHeight="25.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label fx:id="Declare" alignment="CENTER" prefHeight="160.0" prefWidth="600.0" style="-fx-font-size: 40;" text="Winner" GridPane.columnSpan="5" />
+            <Label fx:id="Player" alignment="CENTER" prefHeight="160.0" prefWidth="600.0" style="-fx-font-size: 40;" text="Player1" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="1" />
+            <Label fx:id="Of" alignment="CENTER_RIGHT" prefHeight="160.0" prefWidth="600.0" style="-fx-font-size: 40;" text="Score" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="2" />
+            <Label fx:id="Score" alignment="CENTER" prefHeight="160.0" prefWidth="600.0" style="-fx-font-size: 40;" text="00" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Button fx:id="Again" mnemonicParsing="false" onMouseClicked="#start" onMouseEntered="#hovering" prefHeight="60.0" prefWidth="120.0" text="Again" GridPane.rowIndex="3" />
+            <Button fx:id="Home" mnemonicParsing="false" onMouseClicked="#home" onMouseEntered="#hovering" prefHeight="60.0" prefWidth="120.0" text="Home" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

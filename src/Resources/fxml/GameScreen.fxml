@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="main" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane prefHeight="450.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <GridPane prefHeight="200.0" prefWidth="700.0" BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="14.3" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="14.3" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="14.3" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="14.3" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="14.3" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="14.3" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="14.3" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" percentHeight="50.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" percentHeight="50.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowSpan="2">
+                     <styleClass>
+                        <String fx:value="BoardCell" />
+                        <String fx:value="BoardEnd0" />
+                     </styleClass>
+                     <children>
+                        <Pane id="00" onDragDropped="#drop" onDragOver="#over" onMouseEntered="#enter" onMouseExited="#exit" styleClass="BoardGem" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="BoardCell" GridPane.columnIndex="1">
+                     <children>
+                        <Pane id="01" onDragDetected="#detect" onDragDropped="#drop" onDragOver="#over" onMouseEntered="#enter" onMouseExited="#exit" styleClass="BoardGem" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children></AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="BoardCell" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <children>
+                        <Pane id="11" onDragDetected="#detect" onDragDropped="#drop" onDragOver="#over" onMouseEntered="#enter" onMouseExited="#exit" styleClass="BoardGem" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="BoardCell" GridPane.columnIndex="2">
+                     <children>
+                        <Pane id="02" onDragDetected="#detect" onDragDropped="#drop" onDragOver="#over" onMouseEntered="#enter" onMouseExited="#exit" styleClass="BoardGem" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="BoardCell" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <children>
+                        <Pane id="12" onDragDetected="#detect" onDragDropped="#drop" onDragOver="#over" onMouseEntered="#enter" onMouseExited="#exit" styleClass="BoardGem" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="BoardCell" GridPane.columnIndex="3">
+                     <children>
+                        <Pane id="03" onDragDetected="#detect" onDragDropped="#drop" onDragOver="#over" onMouseEntered="#enter" onMouseExited="#exit" styleClass="BoardGem" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="BoardCell" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                     <children>
+                        <Pane id="13" onDragDetected="#detect" onDragDropped="#drop" onDragOver="#over" onMouseEntered="#enter" onMouseExited="#exit" styleClass="BoardGem" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="BoardCell" GridPane.columnIndex="4">
+                     <children>
+                        <Pane id="04" onDragDetected="#detect" onDragDropped="#drop" onDragOver="#over" onMouseEntered="#enter" onMouseExited="#exit" styleClass="BoardGem" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="BoardCell" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                     <children>
+                        <Pane id="14" onDragDetected="#detect" onDragDropped="#drop" onDragOver="#over" onMouseEntered="#enter" onMouseExited="#exit" styleClass="BoardGem" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="BoardCell" GridPane.columnIndex="5">
+                     <children>
+                        <Pane id="05" onDragDetected="#detect" onDragDropped="#drop" onDragOver="#over" onMouseEntered="#enter" onMouseExited="#exit" styleClass="BoardGem" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="BoardCell" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                     <children>
+                        <Pane id="15" onDragDetected="#detect" onDragDropped="#drop" onDragOver="#over" onMouseEntered="#enter" onMouseExited="#exit" styleClass="BoardGem" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowSpan="2">
+                     <children>
+                        <Pane id="66" onDragDropped="#drop" onDragOver="#over" onMouseEntered="#enter" onMouseExited="#exit" styleClass="BoardGem" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                     <styleClass>
+                        <String fx:value="BoardCell" />
+                        <String fx:value="BoardEnd1" />
+                     </styleClass>
+                  </AnchorPane>
+               </children>
+            </GridPane>
+         </center>
+         <left>
+            <Pane fx:id="Left" prefHeight="100.0" prefWidth="50.0" BorderPane.alignment="CENTER" />
+         </left>
+         <right>
+            <Pane fx:id="Right" prefHeight="100.0" prefWidth="50.0" BorderPane.alignment="CENTER" />
+         </right>
+         <top>
+            <AnchorPane fx:id="Top" prefHeight="125.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="Setting" cancelButton="true" layoutX="650.0" layoutY="30.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#setting" onMouseEntered="#hovering" prefHeight="60.0" prefWidth="120.0" text="Setting" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="30.0" />
+                  <Label fx:id="Player0" layoutX="26.0" layoutY="18.0" prefHeight="30.0" prefWidth="120.0" text="Player0" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="15.0" />
+                  <HBox fx:id="P0" layoutX="229.0" layoutY="30.0" prefHeight="30.0" prefWidth="240.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="30.0">
+                     <children>
+                        <Label fx:id="Player0Of" prefHeight="30.0" prefWidth="120.0" text="Score" HBox.hgrow="ALWAYS" />
+                        <Label fx:id="Player0Score" prefHeight="30.0" prefWidth="120.0" text="00" />
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </top>
+         <bottom>
+            <AnchorPane fx:id="Bottom" prefHeight="125.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="Player1" layoutX="14.0" layoutY="86.0" prefHeight="30.0" prefWidth="120.0" text="Player1" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="30.0" />
+                  <HBox fx:id="P1" layoutX="14.0" layoutY="20.0" prefHeight="30.0" prefWidth="240.0" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="30.0">
+                     <children>
+                        <Label fx:id="Player1Of" prefHeight="30.0" prefWidth="120.0" text="Score" HBox.hgrow="ALWAYS" />
+                        <Label fx:id="Player1Score" prefHeight="30.0" prefWidth="120.0" text="00" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="P2" layoutX="434.0" layoutY="30.0" prefHeight="60.0" prefWidth="240.0" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="30.0">
+                     <children>
+                        <Label fx:id="Turn" alignment="CENTER_RIGHT" prefHeight="60.0" prefWidth="120.0" text="Turn0" />
+                        <Label fx:id="Gems" alignment="CENTER_RIGHT" prefHeight="60.0" prefWidth="120.0" text="00" />
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </bottom></BorderPane>
+      <AnchorPane fx:id="settingPane" layoutY="1000.0" prefHeight="450.0" prefWidth="800.0">
+         <children>
+            <fx:include fx:id="SS" source="SettingScreen.fxml" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="winPane0" layoutY="1000.0" prefHeight="450.0" prefWidth="800.0">
+         <children>
+            <fx:include fx:id="WS0" source="WinScreen0.fxml" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="winPane1" layoutY="1000.0" prefHeight="450.0" prefWidth="800.0">
+         <children>
+            <fx:include fx:id="WS1" source="WinScreen1.fxml" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

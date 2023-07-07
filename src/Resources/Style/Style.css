@@ -1,0 +1,115 @@
+root { 
+    display: block;
+}
+
+#HomescreenBackground {
+	-fx-background-image: url("../Image/homescreen_background.png");
+	-fx-background-size: 100% auto;
+	-fx-background-position: 10% 10%;
+	-fx-background-repeat: no-repeat;
+}
+
+.SubPane {
+	-fx-border-color: #776;
+	-fx-border-radius: 20;
+	-fx-border-width: 5;
+	-fx-background-color: #ccb;
+	-fx-background-radius: 20;
+}
+
+.button {
+    -fx-padding: 5 15 15 15;
+    -fx-background-insets: 0 0 0 0, 0 0 10 0;
+    -fx-background-radius: 10;
+    -fx-background-color: #ddc, #eed;
+    -fx-font-family: "DejaVu Sans";
+    -fx-font-weight: bold;
+    -fx-font-size: 15;
+    -fx-text-fill: #766;
+}
+
+.button: hover {
+    -fx-background-color: #ddc, #eee;
+}
+
+.button: pressed {
+    -fx-padding: 10 15 15 15;
+    -fx-background-insets: 5 0 0 0, 5 0 5 0;
+}
+
+.track {
+	-fx-background-color: linear-gradient(to right, #ddc 100%, #eee 100%);
+	-fx-background-radius: 10;
+	-fx-pref-height: 20;
+}
+
+.thumb {
+	-fx-background-color: #eed;
+	-fx-background-radius: 15;
+	-fx-pref-width: 30;
+	-fx-pref-height: 30;
+}
+
+.thumb: hover {
+    -fx-background-color: #eee;
+}
+
+.label {
+	-fx-text-fill: #766;
+	-fx-font-family: "DejaVu Sans";
+    -fx-font-weight: bold;
+    -fx-font-size: 20;
+}
+
+.BoardCell {
+	-fx-border-color: #ba9;
+	-fx-border-width: 5;
+	-fx-background-color: #ddc;
+	-fx-shape: "M 0 0 L 0 -6 L -12 -6 L -12 6 L 0 6 L 0 0";
+	-fx-background-size: cover;
+	-fx-background-repeat: no-repeat;
+}
+
+.BoardCell: hover {
+	-fx-border-color: #eee;
+}
+
+.BoardEnd0 {
+	-fx-shape: "M 0 0 L 0 -6 A 1 1 0 0 0 0 6 L 0 0";
+}
+
+.BoardEnd1 {
+	-fx-shape: "M 0 0 L 0 6 A 1 1 0 0 0 0 -6 L 0 0";
+}
+
+.BoardGem {
+	-fx-background-color: transparent;
+}
+
+.Gem {
+    -fx-fill: #eed;
+    -fx-stroke-width: 2;
+    -fx-stroke: #ba9;
+}
+
+.dialog-pane: .button {
+    -fx-padding: 5 15 15 15;
+    -fx-background-insets: 0 0 0 0, 0 0 10 0;
+    -fx-background-radius: 10;
+    -fx-background-color: #ddc, #eed;
+    -fx-font-family: "DejaVu Sans";
+    -fx-font-weight: bold;
+    -fx-font-size: 15;
+    -fx-text-fill: #766;
+ }
+
+.dialog-pane: .button:hover {     
+    -fx-background-color: #ddc, #eee;
+ }
+ 
+.dialog-pane:header .header-panel .label {
+	-fx-text-fill: #766;
+	-fx-font-family: "DejaVu Sans";
+    -fx-font-weight: bold;
+    -fx-font-size: 20;
+}
